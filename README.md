@@ -35,11 +35,23 @@ schema/
 
 ## Setup
 
-```bash
+Requires **Python 3.10+**.
+
+**Windows**
+```powershell
 python -m venv .venv
-.venv\Scripts\activate        # Windows
+.venv\Scripts\activate
 pip install pandas pyarrow duckdb "meteostat>=2.1" requests tqdm polars
 ```
+
+**macOS / Linux**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pandas pyarrow duckdb "meteostat>=2.1" requests tqdm polars
+```
+
+Works on x86-64 and ARM64 (Apple Silicon, Windows ARM, Linux ARM). On Linux ARM64, if pip builds `pyarrow` or `polars` from source, install build tools first: `sudo apt install build-essential cmake`.
 
 Then open `aviation_pipeline.ipynb` in Jupyter or VS Code and run all cells in order.
 
