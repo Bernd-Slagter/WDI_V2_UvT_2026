@@ -1,0 +1,21 @@
+# Environment
+.env
+.venv/
+
+# Data — large files, fully reproducible by running the notebook
+data/
+
+# Logs
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
